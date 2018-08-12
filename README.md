@@ -62,7 +62,7 @@ These are most useful extensions for front end developer.
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 - [VSCode icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons)
 - [VS Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
-- json
+- [Paste JSON as Code](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype)
 
 ### 9. Others
 - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
@@ -126,7 +126,7 @@ Extensions (like ESLint) can contribute to a list of problems in a file. When pr
 
 `Cmd + Click` on two files in the file explorer and right-click on either to choose "Compare Selected". This allows you to diff any two files in your project.
 
-## Navigate Like a Rocket
+## Navigate Like a Missile
 
 ### 1. Find in File / Global
 
@@ -299,11 +299,10 @@ Node.js specific info: https://code.visualstudio.com/docs/nodejs/nodejs-debuggin
 
 
 ## Keyboard Shortcuts (PDF)
-
-    - [Windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
-    - [Mac](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
-    - [Linux](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf)
-
+ - [Windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
+ - [Mac](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
+ - [Linux](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf)
 
 
-Most of the credit goes to: [Ryan Niemeyer](https://gist.github.com/rniemeyer/47a66d098b173c741bfff8c70544b366)
+
+Description of the the shortcut keys credit goes to: [Ryan Niemeyer](https://gist.github.com/rniemeyer/47a66d098b173c741bfff8c70544b366)
