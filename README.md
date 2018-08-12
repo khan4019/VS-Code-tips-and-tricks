@@ -2,6 +2,8 @@
 
 A collections of Visual Studio code extensions, snippets, tics and tricks. These extension and shortcut key will make you productive front end developer.
 
+These are most useful extensions for front end developer. 
+
 ## Extensions
 
 ### 1. Javascript
@@ -10,12 +12,14 @@ A collections of Visual Studio code extensions, snippets, tics and tricks. These
 - [JS Refactor](https://marketplace.visualstudio.com/items?itemName=cmstead.jsrefactor)
 - [Quokka.js](https://quokkajs.com/)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) 
+- [Auto Import](https://marketplace.visualstudio.com/items?itemName=steoates.autoimport)
+- [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
 
 ### 2. React
 - [React Extension Pack](https://marketplace.visualstudio.com/items?itemName=jawandarajbir.react-vscode-extension-pack)
 - [Reactjs code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets)
 - [React Native Tools](https://marketplace.visualstudio.com/items?itemName=vsmobile.vscode-react-native)
-- [ES7 React/Redux/GraphQL/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
+- [ES7 React/Redux/GraphQL Snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
 
 
 ### 3. Angular
@@ -31,15 +35,20 @@ A collections of Visual Studio code extensions, snippets, tics and tricks. These
 ### 5. CSS:
 - [IntelliSense for CSS](https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion)
 - [CSS peak](https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek)
+- [Bootstrap 4 snippets](https://marketplace.visualstudio.com/items?itemName=thekalinga.bootstrap4-vscode)
+- [Color Info](https://marketplace.visualstudio.com/items?itemName=bierner.color-info)
+- [SVG Viewer](https://marketplace.visualstudio.com/items?itemName=cssho.vscode-svgviewer)
 
 ### 6. Productivity
 - [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
-- [VS Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
+- [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
 - [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
+- [Clipboard History](https://marketplace.visualstudio.com/items?itemName=Anjali.clipboard-history)
 - [Open in browser](https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser)
-- [Auto Import](https://marketplace.visualstudio.com/items?itemName=steoates.autoimport)
-- [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
-- [Excel Viewer](https://marketplace.visualstudio.com/items?itemName=GrapeCity.gc-excelviewer)
+- [TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight)
+- [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
+- [Regex Previewer](https://marketplace.visualstudio.com/items?itemName=chrmarti.regex)
+
 
 ### 7. Git
 - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
@@ -47,15 +56,22 @@ A collections of Visual Studio code extensions, snippets, tics and tricks. These
 - [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
 - [Git Blame](https://marketplace.visualstudio.com/items?itemName=waderyan.gitblame)
 
-### 8. Others
+### 8. General
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-- [SQL Server](https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql)
-- [Docker](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker)
+- [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify)
+- [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 - [VSCode icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons)
+- [VS Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
 - json
 
+### 9. Others
+- [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+- [SQL Server](https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql)
+- [Docker](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker)
+- [Excel Viewer](https://marketplace.visualstudio.com/items?itemName=GrapeCity.gc-excelviewer)
 
-### 9. Writing Your Own Extension
+
+### 10. Writing Your Own Extension
 - [Building extensions](https://code.visualstudio.com/docs/extensions/overview)
 - [Extension Examples](https://code.visualstudio.com/docs/extensions/samples)
 
