@@ -9,6 +9,8 @@
 
 - [JS Refactor](https://marketplace.visualstudio.com/items?itemName=cmstead.jsrefactor)
 
+- [Quokka.js](https://quokkajs.com/)
+
 ### 1. General:
 
 - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) 
@@ -37,6 +39,8 @@
 - json
 
 - [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
+
+- [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
 
 ### Language Specific
 - [IntelliSense for CSS](https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion)
