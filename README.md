@@ -304,5 +304,10 @@ Node.js specific info: https://code.visualstudio.com/docs/nodejs/nodejs-debuggin
  - [Linux](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf)
 
 
+### Other Resources
+- [VS Code User guide](https://code.visualstudio.com/docs/editor/codebasics)
+- [10 Must-have VS Code Extensions](https://www.sitepoint.com/vs-code-extensions-javascript-developers/)
 
+
+###  Credits
 Description of the the shortcut keys credit goes to: [Ryan Niemeyer](https://gist.github.com/rniemeyer/47a66d098b173c741bfff8c70544b366)
