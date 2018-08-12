@@ -1,5 +1,57 @@
 # Visual Studio Code tips and tricks
 
+## Extensions
+
+### 1. Javascript
+- [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
+
+- [JS Snippet](https://marketplace.visualstudio.com/items?itemName=nathanchapman.JavaScriptSnippets)
+
+- [JS Refactor](https://marketplace.visualstudio.com/items?itemName=cmstead.jsrefactor)
+
+### 1. General:
+
+- [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) 
+
+- [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
+
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) 
+
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) 
+
+- [SQL Server](https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql)
+
+- [Docker](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker)
+
+- [VS Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
+
+- [VSCode icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons)
+
+- [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
+
+- [open in browser
+](https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser)
+
+- [Excel Viewer](https://marketplace.visualstudio.com/items?itemName=GrapeCity.gc-excelviewer)
+
+- json
+
+- [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
+
+### Language Specific
+- [IntelliSense for CSS](https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion)
+- [CSS peak](https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek)
+- [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
+- [React Native Tools](https://marketplace.visualstudio.com/items?itemName=vsmobile.vscode-react-native)
+- [Angular 6 Snippets](https://marketplace.visualstudio.com/items?itemName=Mikael.Angular-BeastCode)
+
+-[Angular Language Service](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template)
+
+### 35. Writing Your Own Extension
+
+Documentation for building extensions: https://code.visualstudio.com/docs/extensions/overview
+Examples: https://code.visualstudio.com/docs/extensions/samples
+
 
 ## General Capabilities
 
@@ -233,97 +285,6 @@ Node.js specific info: https://code.visualstudio.com/docs/nodejs/nodejs-debuggin
 Install [this extension](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome). This will allow you to create Chrome launch configurations for either launching a web application in Chrome or attaching to an existing Chrome instance. With this extension you can set breakpoints in VS Code and hit them while using your web application in Chrome.
 
 Additional documentation for the extension: https://github.com/Microsoft/vscode-chrome-debug
-
-## Extensions
-
-### 34. Some that I like:
-
-- [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens). Adds a ton of useful tools to VS Code related to Git. This includes nice blame information on each line as well as a sidebar tab for exploring a branch of file history to see diffs of individual changes.
-
-- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) - Adds [eslint](https://eslint.org/) support to VS Code for evaluating your code for problems. Set `eslint.autoFixOnSave : true` in your settings, so eslint can address and fixable problems automatically. You will need to ensure that your `files.autoSave` option is set to `off`, `onFocusChange` or `onWindowChange` for this to work.
-
-- [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) - Extension for working with https://www.npmjs.com/package/editorconfig which is useful in an environment where you have people using a variety of editors.
-
-- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - Extension for working with [Prettier](https://github.com/prettier/prettier) for automatic code formatting. Useful to ensure that all code in a project is formatted the exact same way.
-
-- [SQL Server](https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql) - Create connections to SQL Server instances and run scripts against your server and get intellisense when editing SQL files.
-
-- [Docker](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker) - Adds intellisense for various docker files and access to running common docker commands.
-
-## Extensibility
-
-### 35. Writing Your Own Extension
-
-Documentation for building extensions: https://code.visualstudio.com/docs/extensions/overview
-Examples: https://code.visualstudio.com/docs/extensions/samples
-
-Installing the yeoman generator:
-
-```
-npm install -g yo generator-code
-yo code
-```
-
-Activation code for my sample word-shortener extension:
-
-
-```js
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
-const vscode = require("vscode");
-
-// this method is called when your extension is activated
-// your extension is activated the very first time the command is executed
-function activate(context) {
-	// Use the console to output diagnostic information (console.log) and errors (console.error)
-	// This line of code will only be executed once when your extension is activated
-	console.log(
-		'Congratulations, your extension "word-shortener" is now active!'
-	);
-
-	// The command has been defined in the package.json file
-	// Now provide the implementation of the command with  registerCommand
-	// The commandId parameter must match the command field in package.json
-	const disposable = vscode.commands.registerCommand(
-		"extension.shortenWord",
-		function() {
-			const editor = vscode.window.activeTextEditor;
-			if (!editor) {
-				return;
-			}
-
-			const { document: doc, selections } = editor;
-
-			editor.edit(function(edit) {
-				// Loop through all selections (multi-cursor)
-				for (const selection of selections) {
-					// Get the text
-					let text = doc.getText(
-						new vscode.Range(selection.start, selection.end)
-					);
-
-					// Shorten the text like: testing -> t5g
-					if (text && text.length > 3) {
-						const shortText =
-							text.substr(0, 1) +
-							(text.length - 2) +
-							text.substr(text.length - 1, 1);
-						edit.replace(selection, shortText);
-					}
-				}
-			});
-		}
-	);
-
-	context.subscriptions.push(disposable);
-}
-exports.activate = activate;
-
-// this method is called when your extension is deactivated
-function deactivate() {}
-exports.deactivate = deactivate;
-```
-
 
 ## Honorable Mentions
 
